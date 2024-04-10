@@ -37,6 +37,9 @@ protected:
 	UStaticMeshComponent* FlagMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float percentage;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float CaptureTime;
 
 
@@ -50,7 +53,6 @@ protected:
 		int32 OtherBodyIndex);
 
 	float timeSinceTick;
-	float percentage;
 	bool isCapturing;
 	EFlagState flagState;
 
